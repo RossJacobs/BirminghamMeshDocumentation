@@ -4,11 +4,25 @@ Use Case:
 Device is in a fixed location, meant to improve the reception and support the network and local users. 
 Often times, this is hoisted into a tall tree on a residential property.
 
+Firmware Version:
+
 Settings:
-	Device Role: 
-		Client
-			App connected or stand alone messaging device.
-			
-			General use for individuals needing to communicate over the Meshtastic network with support for client applications.
+	User:
+	Channels:
+		0: Primary
+			Channel Name: <Your Family Channel>
+			PSK: <Your PSK>
+			Position Enabled: True
+			Precise Location: True
+
+		1: 
+			Channel Name: LongFast
+			PSK: AQ==
+		
+	Device:
+		Device Role: Client
+		Rebroadcast Mode: All
+		POSIX Timezone: CST+6CDT,M3.2.0/2,M11.1.0/2
+
 
 		

@@ -1,13 +1,50 @@
 Personal Node
 
 Use Case:
-Device carried on your person for tracking and communicating, either via bluetooth to a smartphone/tablet, or through direct input via integrated keyboard.
+Device carried on your person for tracking and communicating, either via bluetooth to a smartphone/tablet, or through direct 
+input via integrated keyboard.
 
 Settings:
-	Device Role: 
-		Client_Mute 
-			App connected or stand alone messaging device.
-			
-			General use for individuals needing to communicate over the Meshtastic network with support for client applications.
+	User Config:
+		Licensed amateur radio: Off
 
-		
+	Channels:
+		0: Name:  <personal channel \ family etc \ you name it>
+			Uplink enabled: <Your option>
+			Downlink enabled: <Your option>
+	 		Position enabled: <Your option>
+			PSK:  <your group's key>
+			iOS: 
+				Channel Role: Primary 
+			Android: 
+				Channel 0 is always primary
+
+		1: Name: LongFast <optional>
+			Uplink enabled: False
+			Downlink enabled: False
+	 		Position enabled: False
+
+			PSK: AQ==
+			iOS: 
+				Channel Role: Secondary
+			Android
+				Channels 1-7 are always Secondary
+		3: <Others as needed>
+	
+	Device Role: Client_Mute 
+		Rebroadcast mode: <doesn't change anything for Client_Mute>
+		NodeInfo broadcast interval (seconds): 3600
+		POSIX Timezone: CST+6CDT,M3.2.0/2,M11.1.0/2
+		Disable LED heartbeat: <optional - disable to save power>
+
+	LoRa:
+		Hop Limit: 4
+		Modem Preset: LONG_FAST
+		Frequency Slot: 20 (confirm this)
+		Frequency: 906.875 Mhz (confirm this)
+		Override Duty Cycle: True (In the US)
+		SX126X RX boosted gain: True
+
+	After sending changes to the device, always re-check: (we've seen these change for some reason)
+		Frequency Slot: 20 (confirm this)
+		Frequency: 906.875 Mhz (confirm this)
