@@ -2,6 +2,11 @@ BirminghamMesh Best Practices, Builds and General Documentation
 
 https://BirminghamMesh.org
 
+Additional Hardware Buildouts:
+https://birminghammesh.org/hardware/
+Additional 3D Print files from us here:  https://www.printables.com/@Geek_1414822
+
+
 BirminghamMesh Best Practices, Builds and General Documentation © 2024 by Ross Jacobs is licensed under Creative Commons Attribution-ShareAlike 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
 
