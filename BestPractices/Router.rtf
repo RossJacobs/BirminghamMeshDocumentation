@@ -1,0 +1,40 @@
+Router Node
+
+Use Case:
+Device used as a stationary relay to extend the range and reliability of the mesh network.  Use these nodes sparingly and only with 
+the best elevation.  You want these nodes to carry traffic from one local area to another, over a tall ridge, etc.  Too many router
+nodes in a mesh will cause issues.
+
+Settings:
+    User Config:
+        Licensed amateur radio: Off
+
+    Channels:
+        0: Name: LongFast
+            Uplink enabled: False
+            Downlink enabled: False
+     		Position enabled: False
+            PSK: <default AQ==>
+            iOS: 
+                Channel Role: Primary 
+            Android: 
+                Channel 0 is always primary
+
+    
+    Device Role: Router 
+        Rebroadcast mode: True
+        NodeInfo broadcast interval (seconds): 600
+        POSIX Timezone: CST+6CDT,M3.2.0/2,M11.1.0/2 
+            <AKA Central Time Zone>
+        Disable LED heartbeat: <optional - disable to save power>
+
+    LoRa:
+        Hop Limit: 6
+        Modem Preset: LONG_FAST
+        Frequency Slot: 20 (confirm this)
+        Frequency: 906.875 Mhz (confirm this)
+        Override Duty Cycle: True (In the US)
+        SX126X RX boosted gain: True
+
+
+
